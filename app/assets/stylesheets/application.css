@@ -1,3 +1,300 @@
+/*{
+  border: 1px solid pink;
+}*/
+
+html{
+  margin: 0;
+  padding: 0;
+  }
+
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    margin: 0px;
+    padding:0;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    min-height: 900px;
+}
+
+.header {
+    background-color: white;
+
+}
+
+.header a{
+  color: white;
+}
+
+.header img{
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 19px;
+  width: 65%;
+
+}
+
+.header h1{
+  font-family: futura;
+  color: #000;
+  font-size: 3.6em;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 4px;
+  font-style: bold;
+  text-align: center;
+}
+
+/*.edges {
+
+}*/
+
+.bottom {
+  background-color: #FC354C;
+  position:fixed;
+  bottom: 0;
+  z-index: 999;
+  height: 20px;
+  width: 100%;
+  color: #FC354C;
+}
+
+.top {
+  background-color: #FC354C;
+  position:fixed;
+  top: 0;
+  z-index: 999;
+  height: 20px;
+  width: 100%;
+  color: #FC354C;
+}
+
+.left {
+  background-color: #FC354C;
+  position:fixed;
+  left: 0;
+  height: 100%;
+  width: 20px;
+  color: #FC354C;
+}
+
+.right {
+  background-color: #FC354C;
+  position:fixed;
+  right: 0;
+  height: 100%;
+  width: 20px;
+  color: #FC354C;
+}
+
+.links {
+  height:50px;
+  background-color: #000;
+}
+
+.nav {
+  margin: 0;
+  font-family: futura;
+  font-size: 2.1em;
+  color: white;
+  padding: 5px;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 0em;
+}
+
+.nav li{
+  display: inline-block;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 10px;
+
+}
+
+.nav li:hover .dropdown{
+  display: inline-block;
+}
+
+ul.dropdown {
+  display: none;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: black;
+  text-align: left;
+  /*opacity: .80;*/
+  left: 40%;
+  /*top: 545px;*/
+  /*z-index: -10;*/
+}
+
+ul.dropdown li{
+  text-align: center;
+
+}
+
+ul.dropdown li:hover {
+  /*display: inline-block;*/
+  background-color: #FC354C;
+  width: 150px;
+
+}
+
+ul.dropdown li{
+  display: block;
+
+}
+
+
+
+.pagebody {
+  font-family: rockwell;
+  font-size: 14px;
+  color: black;
+  margin: 30px;
+  padding: 10;
+  text-align: center;
+
+}
+
+.pagebody li{
+  list-style-type: none;
+  font-family: rockwell;
+  font-size: 20px;
+  color: black;
+}
+.pagebody a{
+  color: black;
+ }
+
+.pagebody h1{
+  font-family: futura;
+  color: #000;
+  font-size: 3.6em;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 4px;
+  font-style: bold;
+  text-align: center;
+
+
+}
+
+.media {
+    position: fixed;
+    float:left;
+    /*bottom: 4px;*/
+    bottom:28px;
+    right:40px;
+    width:50px;
+}
+
+.media img{
+  height: 50px;
+  padding: 4px;
+
+
+}
+
+.about {
+  font-family: rockwell;
+  font-size: 14px;
+  color: black;
+  margin: 40px;
+  padding: 20;
+  text-align: center;
+  float: left;
+  width: 85%;
+}
+
+.about h1{
+  font-family: futura;
+  color: #000;
+  font-size: 3em;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 4px;
+  font-style: bold;
+  text-align: center;
+
+}
+
+
+.about img{
+    /*border-style: solid;*/
+    border-radius: 100px;
+    border-color: #ccc;
+    float: left;
+    width:20%;
+    /*position: fixed;*/
+}
+
+
+
+.postbody{
+  font-family: rockwell;
+  font-size: 1.5em;
+  color: black;
+  margin: 60px;
+  padding: 50px;
+
+
+}
+
+.postbody h3{
+  font-family: futura;
+  color: #000;
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 4px;
+  font-style: bold;
+  text-align: center;
+
+}
+
+
+p {
+    line-height: 21px;
+}
+
+
+h2 {
+    color: white;
+    background-color: #090;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+h3 {
+    font-family: futura;
+    color: #000;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none
+}
+
+
+
+
+
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

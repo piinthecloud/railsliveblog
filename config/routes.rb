@@ -1,11 +1,22 @@
 Rails.application.routes.draw do
 
+  get "/posts/about_me",  to: "posts#about_me"
 
-  get "/posts", to: "posts#index"
+  get "/home/instagram",  to: "home#instagram"
+
+  get "/home",       to: "home#index"
+
+  get  "/posts",     to: "posts#index"
   post "/posts",     to: "posts#create"
-  get "/posts/new", to: "posts#new"
+  get  "/posts/new", to: "posts#new", as: :new_post
 
-  root "posts#index"
+
+  put  "/posts/:id", to: "posts#update", as: :post
+
+  get  "/posts/:id/edit", to: "posts#edit", as: :edit_post
+
+
+  root "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

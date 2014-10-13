@@ -1,6 +1,5 @@
-<h2> NEW POST </h2>
 
-<%= form_for @posts do |f| %>
+<!-- <%= form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
 
@@ -8,4 +7,26 @@
   <%= f.text_area :content %>
 
   <%= f.submit %>
-<% end %>
+<% end %> -->
+
+
+<!--  html form -->
+
+
+
+
+<div class="pagebody">
+
+  <h1> NEW POST </h1>
+
+
+<form action="/posts" method="POST">
+  title <input type="text" name="banana[title]" value="<%= @post.title %>"/>
+  content <input type="text" name="banana[content]" value="<%= @post.content %>"/>
+
+  <input type="submit" />
+
+
+</form>
+
+</div>

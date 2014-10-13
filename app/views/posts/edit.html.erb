@@ -1,0 +1,18 @@
+
+
+<div class="pagebody">
+
+<h1>Edit</h1>
+<h4> <%= @post.title.upcase %></h4>
+
+<form action="/posts/<%= @post.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT"/>
+  title <input type="text" name="banana[title]" value="<%= @post.title %>"/>
+  content <input type="text" name="banana[content]" value="<%= @post.content %>"/>
+
+  <input type="submit" />
+
+
+</form>
+
+</div>

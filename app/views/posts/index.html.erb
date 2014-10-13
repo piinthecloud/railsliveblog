@@ -1,12 +1,24 @@
-<h2> Posts </h2>
+
+
+
+
+<div class="pagebody">
+
+  <h1>POSTS</h1>
+
+
 
 <% @posts.each do |post| %>
   <article>
     <h3><%= post.title %></h3>
 
     <%= post.content %>
+    <p><%= link_to "Edit", edit_post_path(post.id) %></p>
+    <hr>
   </article>
-
 <% end %>
 
-<%= link_to "New Post", "/posts/new" %>
+<%= link_to "New Post", new_post_path %>
+
+
+</div>
