@@ -6,8 +6,9 @@ Rails.application.routes.draw do
 
   get "/home",       to: "home#index"
 
-  get  "/posts",     to: "posts#index"
-  post "/posts",     to: "posts#create"
+  get  "/posts",     to: "posts#index" , as: :posts
+
+  post "/posts",     to: "posts#create", as: :postpage
   get  "/posts/new", to: "posts#new", as: :new_post
 
 
@@ -15,8 +16,18 @@ Rails.application.routes.draw do
 
   get  "/posts/:id/edit", to: "posts#edit", as: :edit_post
 
+  delete "/posts/:id",     to: "posts#destroy", as: :delete_post
+
+
 
   root "home#index"
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

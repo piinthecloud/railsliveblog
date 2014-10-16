@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  # before_action :require_login, only: [:new, :create, :edit, :update]
+
   def index
     @posts = Post.all
 
@@ -15,11 +17,14 @@ class PostsController < ApplicationController
     # @post = Post.new(params.require(:post).permit(:title, :content))
     @post = Post.new(params.require(:banana).permit(:title, :content))
     if @post.save
-      redirect_to root_path
+      redirect_to postpage_path
     else
       render :new
     end
   end
+
+
+
 
   def edit
     #find_post
@@ -30,9 +35,16 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     if @post.update(post_params)
-    redirect_to root_path
+    redirect_to postpage_path
     else
       render :edit
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to postpage_path
     end
   end
 

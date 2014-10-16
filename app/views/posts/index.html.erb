@@ -6,19 +6,25 @@
 
 <h3>POSTS</h3>
 
-
+<h3><%= link_to "New Post", new_post_path %></h3>
 
 <% @posts.each do |post| %>
   <article>
-    <h3><%= post.title %></h3>
 
-    <%= post.content %>
-    <p><%= link_to "Edit", edit_post_path(post.id) %></p>
+    <%= post.content.html_safe %>
+    <p><%= link_to "Edit", "/posts/#{post.id}/edit" %>
+    <%= button_to "Delete", "/posts/#{post.id}", method: :delete %>
+  </p>
+<!--
+      <%= link_to "delete", @post, method: :delete %> -->
+
+
+
     <hr>
   </article>
 <% end %>
 
-<%= link_to "New Post", new_post_path %>
+
 
 
 </div>
