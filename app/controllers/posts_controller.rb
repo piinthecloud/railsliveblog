@@ -14,8 +14,8 @@ class PostsController < ApplicationController
   def create
     # raise params.inspect
     # @post = Post.new(title: params[:title], content: params[:content])
-    # @post = Post.new(params.require(:post).permit(:title, :content))
-    @post = Post.new(params.require(:banana).permit(:title, :content))
+    @post = Post.new(params.require(:post).permit(:title, :content))
+    # @post = Post.new(params.require(:banana).permit(:title, :content))
     if @post.save
       redirect_to postpage_path
     else

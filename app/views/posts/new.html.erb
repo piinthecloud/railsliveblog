@@ -1,5 +1,8 @@
+<div class="pagebody">
 
-<!-- <%= form_for @post do |f| %>
+  <h1> NEW POST </h1>
+
+<%= form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
 
@@ -7,26 +10,41 @@
   <%= f.text_area :content %>
 
   <%= f.submit %>
-<% end %> -->
-
-
-<!--  html form -->
+<% end %>
 
 
 
 
-<div class="pagebody">
+<!--  ############################################################  -->
 
-  <h1> NEW POST </h1>
+
 
 
 <form action="/posts" method="POST">
   title <input type="text" name="banana[title]" value="<%= @post.title %>"/>
   content <input type="text" name="banana[content]" value="<%= @post.content %>"/>
-
   <input type="submit" />
-
-
 </form>
+
+
+
+<!--  ############################################################  -->
+
+
+
+
+<%= form_tag postpage_path do %>
+
+  <%= hidden_field_tag :user_id, 1 %>
+  <%= label_tag "banana[title]", "Title" %>
+  <%= text_field_tag "banana[title]" %>
+
+  <%= label_tag "banana[content]", "Content" %>
+  <%= text_field_tag "banana[content]" %>
+
+
+  <%= submit_tag%>
+
+<% end %>
 
 </div>
