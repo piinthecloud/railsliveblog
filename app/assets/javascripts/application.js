@@ -22,6 +22,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require leaflet
+//= require Control.Geocoder
 //= require jquery
 //= require jquery_ujs
 //= require wysihtml5-0.3.0_rc2.min
