@@ -114,6 +114,9 @@ body{
   background-color: #000;
 }
 
+.links li{
+  height:61px;
+}
 .nav {
   margin: 0;
   padding: 0px;
@@ -146,41 +149,49 @@ body{
     color: white;
 }
 
-//
-// .nav li:hover .dropdown{
-//   display: inline-block;
-// }
+ul.nav {
+  height: 61px;
+}
 
-// ul.dropdown {
-//   display: none;
-//   width: 150px;
-//   margin: 0;
-//   padding: 0;
-//   position: absolute;
-//   background-color: black;
-//   text-align: left;
-//   /*opacity: .80;*/
-//   left: 40%;
-//   /*top: 545px;*/
-//   /*z-index: -10;*/
-// }
+div.dropdown {
+  height: 51px;
+}
 
-// ul.dropdown li{
-//   text-align: center;
-//
-// }
-//
-// ul.dropdown li:hover {
-//   /*display: inline-block;*/
-//   background-color: #FC354C;
-//   width: 150px;
-//
-// }
-//
-// ul.dropdown li{
-//   display: block;
-//
-// }
+div.dropdown.open a:hover {
+  background-color: #878787;
+
+}
+
+.dropdown.open a{
+  background-color: #878787;
+
+}
+
+ul.dropdown-menu{
+  background-color: #878787;
+  margin: 0;
+  border:0;
+  padding: 0;
+
+
+
+}
+
+.dropdown-menu {
+  width: 196px;
+}
+
+
+a#dLabel {
+  display: inline;
+  width: 124px;
+  height: 61px;
+  padding: 8px;
+  padding-bottom: 9px;
+  text-decoration: none;
+
+}
+
 
 
 .pagebody {
@@ -195,7 +206,6 @@ body{
 
 .pagebody li{
   list-style-type: none;
-  // font-family: rockwell;
   font-size: 20px;
   color: black;
 }
