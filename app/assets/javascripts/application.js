@@ -7,20 +7,6 @@
 //   });
 //
 // });
-$('a').each(function() {
-   var a = new RegExp('/' + window.location.host + '/');
-   if(!a.test(this.href)) {
-       $(this).click(function(event) {
-           event.preventDefault();
-           event.stopPropagation();
-           window.open(this.href, '_blank');
-       });
-   }
-});
-
-
-
-
 
 
 
@@ -38,5 +24,21 @@ $('a').each(function() {
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require wysihtml5-0.3.0_rc2.min
+//= require bootstrap.min
+//= require bootstrap3-wysihtml5
+//= require bootstrap3-wysihtml5.all.min
 //= require_tree .
+
+
+
+$('a').each(function() {
+   var a = new RegExp('/' + window.location.host + '/');
+   if(!a.test(this.href)) {
+       $(this).click(function(event) {
+           event.preventDefault();
+           event.stopPropagation();
+           window.open(this.href, '_blank');
+       });
+   }
+});

@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Piblog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 
-</head>
 
-<body>
+
 
 
 <!DOCTYPE html />
 <html>
 
+<head>
+  <title>Piblog</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js">
+   </script>
+
+</head>
+<body>
     <div class=top></div>
     <div class=bottom></div>
     <div class=left></div>
@@ -33,6 +37,8 @@
           </li>
           <li><a href= "/posts/">Posts</a></li>
           <li><a href= "/home/instagram">Photostream</a></li>
+          <li><a href= "/map">Map</a></li>
+
         </ul>
       </div>
     </div>
@@ -44,8 +50,8 @@
       <a href= "https://pibloginthesky.wordpress.com/"><img src = "/wordpress.png"></a>
     </div>
 
-    <script src="javascripts/jquery-2.1.1.min.js"></script>
-    <script src="/javascripts/app.js"></script>
+
+
 
 <%= yield %>
 

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
+  # Mercury::Engine.routes
   get "/posts/about_me",  to: "posts#about_me"
 
   get "/home/instagram",  to: "home#instagram"
+  get "/map",  to: "home#map"
 
   get "/home",       to: "home#index"
 
@@ -22,8 +24,8 @@ Rails.application.routes.draw do
 
   root "home#index"
 
-
-
+  #
+  # mount Bootsy::Engine => '/bootsy', as: 'bootsy'
 
 
 

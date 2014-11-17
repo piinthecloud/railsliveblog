@@ -1,18 +1,32 @@
 <div class="pagebody">
 
+
   <h1> NEW POST </h1>
+
 
 <%= form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
-
-  <%= f.label :content %>
+<textarea id="post_content" class='wysihtml5' placeholder="Enter text ...">
+    <%= f.label :content %>
   <%= f.text_area :content %>
 
   <%= f.submit %>
 <% end %>
 
 
+</textarea>
+
+<script type="text/javascript">
+  $(function(){
+
+    $('.wysihtml5').each(function(i, elem) {
+      $(elem).wysihtml5();
+    });
+
+  })
+</script>
+
 
 
 <!--  ############################################################  -->
@@ -20,11 +34,11 @@
 
 
 
-<form action="/posts" method="POST">
+<!-- <form action="/posts" method="POST">
   title <input type="text" name="banana[title]" value="<%= @post.title %>"/>
   content <input type="text" name="banana[content]" value="<%= @post.content %>"/>
   <input type="submit" />
-</form>
+</form> -->
 
 
 
@@ -33,7 +47,7 @@
 
 
 
-<%= form_tag postpage_path do %>
+<!-- <%= form_tag postpage_path do %>
 
   <%= hidden_field_tag :user_id, 1 %>
   <%= label_tag "banana[title]", "Title" %>
@@ -45,6 +59,6 @@
 
   <%= submit_tag%>
 
-<% end %>
+<% end %> -->
 
 </div>

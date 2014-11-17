@@ -58,7 +58,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:banana).permit(:title, :content)
+    params.require(:banana).permit(:title, :content,  :bootsy_image_gallery_id)
   end
 
 

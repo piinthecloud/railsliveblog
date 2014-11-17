@@ -7,4 +7,8 @@ class HomeController < ApplicationController
   def instagram
   end
 
+  def map
+  end
+
+
 end

@@ -11,8 +11,8 @@
 <% @posts.each do |post| %>
   <article>
 
-    <%= post.title.html_safe %>
-    <%= post.content.html_safe %>
+    <h4><%= post.title.html_safe %></h4>
+    <p><%= post.content.html_safe %></p>
     <p><%= link_to "Edit", "/posts/#{post.id}/edit" %>
     <%= button_to "Delete", "/posts/#{post.id}", method: :delete %>
   </p>
