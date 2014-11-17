@@ -4,9 +4,9 @@
 
 
 
-/*{
-  border: 1px solid pink;
-}*/
+// *{
+//   border: 1px solid pink;
+// }
 
 html{
   margin: 0;
@@ -27,9 +27,12 @@ body{
 
 #map
 { height: 500px;
-  width: 500px;
-  margin: 40px;
-  margin-left: 60px;
+  width: 80%;
+  // margin: 20px;
+  // margin-left: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -70,7 +73,7 @@ body{
   background-color: #FC354C;
   position:fixed;
   bottom: 0;
-  z-index: 999;
+  z-index: 10000;
   height: 20px;
   width: 100%;
   color: #FC354C;
@@ -80,7 +83,7 @@ body{
   background-color: #FC354C;
   position:fixed;
   top: 0;
-  z-index: 999;
+  z-index: 1999;
   height: 20px;
   width: 100%;
   color: #FC354C;
@@ -107,7 +110,7 @@ body{
 }
 
 .links {
-  height:50px;
+  height:61px;
   background-color: #000;
 }
 
@@ -116,7 +119,7 @@ body{
   font-family: futura;
   font-size: 2.1em;
   color: white;
-  padding: 5px;
+  padding: 0px;
   font-weight: bolder;
   text-align: center;
   letter-spacing: 0em;
@@ -130,40 +133,46 @@ body{
 
 }
 
-.nav li:hover .dropdown{
-  display: inline-block;
+.nav li a:hover {
+    background-color: #878787;
+    color: white;
 }
 
-ul.dropdown {
-  display: none;
-  width: 150px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  background-color: black;
-  text-align: left;
-  /*opacity: .80;*/
-  left: 40%;
-  /*top: 545px;*/
-  /*z-index: -10;*/
-}
+//
+// .nav li:hover .dropdown{
+//   display: inline-block;
+// }
 
-ul.dropdown li{
-  text-align: center;
+// ul.dropdown {
+//   display: none;
+//   width: 150px;
+//   margin: 0;
+//   padding: 0;
+//   position: absolute;
+//   background-color: black;
+//   text-align: left;
+//   /*opacity: .80;*/
+//   left: 40%;
+//   /*top: 545px;*/
+//   /*z-index: -10;*/
+// }
 
-}
-
-ul.dropdown li:hover {
-  /*display: inline-block;*/
-  background-color: #FC354C;
-  width: 150px;
-
-}
-
-ul.dropdown li{
-  display: block;
-
-}
+// ul.dropdown li{
+//   text-align: center;
+//
+// }
+//
+// ul.dropdown li:hover {
+//   /*display: inline-block;*/
+//   background-color: #FC354C;
+//   width: 150px;
+//
+// }
+//
+// ul.dropdown li{
+//   display: block;
+//
+// }
 
 
 .pagebody {
@@ -200,19 +209,19 @@ ul.dropdown li{
 }
 
 .media {
-    position: fixed;
-    float:left;
-    /*bottom: 4px;*/
-    bottom:28px;
+    margin-left: 90px;
+    margin-bottom: 25px;
     right:40px;
-    width:50px;
+    width:280px;
+    float: right;
+
+
 }
 
 .media img{
+  margin-right: 10px;
   height: 50px;
   padding: 4px;
-
-
 }
 
 .about {
@@ -300,6 +309,7 @@ h3 {
 a {
     text-decoration: none;
 }
+
 
 a:visited {
   text-decoration: none
